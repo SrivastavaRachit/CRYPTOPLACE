@@ -28,6 +28,7 @@ const Home = () => {
     }
 
 
+    
     useEffect(() => {
         setDisplayCoin(allCoin);
     }, [allCoin])
