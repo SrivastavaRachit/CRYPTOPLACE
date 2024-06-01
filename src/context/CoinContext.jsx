@@ -13,7 +13,7 @@ const CoinContextProvider = (props) => {
     const fetchAllCoin = async () => {
         const options = {
             method: 'GET',
-            headers: { accept: 'application/json', 'x-cg-demo-api-key': 'CG-EFLQ5LuubhhohuNw4KbQetaR' }
+            headers: { accept: 'application/json', 'x-cg-demo-api-key': 'CG-9BWjDQ6vmip8APNYhdZkxyvE' }
         };
 
         fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency.name}`, options)
@@ -24,7 +24,7 @@ const CoinContextProvider = (props) => {
 
     useEffect(() => {
         fetchAllCoin();
-    },[currency])
+    }, [currency])
 
 
     const contextValue = {
